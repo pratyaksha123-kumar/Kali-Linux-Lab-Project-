@@ -41,3 +41,36 @@ Follow these steps to replicate the lab (detailed in `setup-guide.md`).
 Use scripts like `nmap-scan.sh` to discover hosts and enumerate services.
 
 Example Output:
+
+### 2. Exploitation (Metasploit)
+Start with `msfconsole` and target known vulnerabilities.
+
+Example (vsftpd backdoor):
+
+### 3. Traffic Analysis (Wireshark)
+Capture traffic during scans/exploits. Filter for protocols like `http` or `ftp`.
+
+## Scripts Included
+- `nmap-scan.sh`: Basic Nmap reconnaissance.
+- `setup-dvwa.sh`: Automate DVWA installation on Ubuntu.
+- `msf-quickstart.rc`: Metasploit resource script for common exploits.
+
+## Learnings and Next Steps
+- Gained hands-on experience with OWASP Top 10 (via DVWA) and common exploits.
+- Emphasized post-exploitation (e.g., privilege escalation) and reporting.
+- Future Enhancements: Add Burp Suite for web testing, integrate Ansible for automation.
+
+## Requirements
+- Host: 8GB+ RAM, 50GB disk.
+- Kali Linux (latest).
+- Ethical mindset: Follow laws like CFAA in the US.
+
+## License
+MIT License. Use for learning only—do not misuse.
+
+## Contact
+Built by [Your Name]. Questions? Open an issue.
+
+---
+
+*Last Updated: [Date]*
