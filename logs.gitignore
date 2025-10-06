@@ -1,0 +1,17 @@
+# VirtualBox/VM files
+*.vdi
+*.ova
+*.vmx
+
+# Logs and temps
+*.log
+*.pcap  # Wireshark captures
+msf*.db  # Metasploit DB
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Sensitive (never commit)
+passwords.txt
+secrets/
